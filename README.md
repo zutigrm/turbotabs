@@ -46,3 +46,17 @@ For more advanced usage visit official <a href="http://themeflection.com/plugins
     $('#main').turbotabs(); 
 ]);
 </pre></code>
+<br/>
+Licenced under MIT licence
+
+<h4>Changelog</h4>
+<table>
+<tr>
+<td>Version 1.0 </td>
+<td> Initial release </td>
+</tr>
+<tr>
+<td>Version 1.1  </td>
+<td>Added 28 animations,  added tt_prefixes to fix compatibility issues with other CSS frameworks such as foundation and bootstrap.</td>
+</tr>
+</table>                          
