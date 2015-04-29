@@ -1,0 +1,25 @@
+{
+  "name": "turbotabs",
+  "version": "1.1",
+  "homepage": "http://themeflection.com/plug/turbotabs-responsive-tabs-jquery-plugin/",
+  "license": "MIT",
+  "main": [
+    "js/turbotabs.min.js",
+    "css/turbotabs.css",
+	"css/font-awesome.min.css",
+	"css/animate.min.css"
+  ],
+  "keywords": [
+    "turbotabs",
+    "tabs",
+    "accordion",
+    "responsive tabs"
+  ],
+  "ignore": [
+    "**/.*",
+    "*.md"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  }
+}
