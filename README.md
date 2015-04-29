@@ -5,3 +5,42 @@ Check demo: http://themeflection.com/plug/turbotabs-responsive-tabs-jquery-plugi
 You can also use my online options builder (http://themeflection.com/plugins/jquery/turbotabs/index.html) that will make it easier for you to implement the plugin options. Play with live previewer and when you are ready click on button "get options".
 
 For documentation visit: http://themeflection.com/plugins/jquery/turbotabs/documentation/documentation.html
+
+<h3>Usage</h3>
+<h4>HTML Markup</h4>
+<pre><code>&lt;div id="main"&gt;
+    &lt;!-- - - - - - Tab navigation - - - - - - --&gt;
+    &lt;ul class=&quot;tt_tabs&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;Tab 1&lt;/li&gt;
+        &lt;li&gt;Tab 2&lt;/li&gt;
+        &lt;li&gt;Tab 3&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;!-- - - - - Tab Content - - - - - --&gt;
+    &lt;div class=&quot;tt_container&quot;&gt;
+       &lt;div class=&quot;tt_tab active&quot;&gt;
+              --- Some Content ---
+        &lt;/div&gt;
+         &lt;div class=&quot;tt_tab&quot;&gt;
+              --- Some Content ---
+        &lt;/div&gt;
+        &lt;div class=&quot;tt_tab&quot;&gt;
+              --- Some Content ---
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- .tt_container --&gt;
+    
+&lt;/div&gt; &lt;!-- #main --&gt; 
+</pre></code>
+<h4>CSS</h4>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/turbotabs.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/animate.min.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/font-awesome.min.css&quot; /&gt;
+</pre></code>
+<h4>jQuery</h4>
+<pre><code>&lt;script src=&quot;js/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/turbotabs.min.js&quot;&gt;&lt;/script&gt;
+</pre></code>
+<h4>Initializing</h4>
+<pre><code>$(document).ready(function(){
+    $('#main').turbotabs(); 
+]);
+</pre></code>
