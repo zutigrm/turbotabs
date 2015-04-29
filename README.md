@@ -1,8 +1,8 @@
 # turbotabs
 TurboTabs is responsive tabs jquery plugin with plenty of customization options and easy to follow HTML markup.
 
-Homepage: http://themeflection.com/plug/turbotabs-responsive-tabs-jquery-plugin/
-For live preview check <a href="http://themeflection.com/plugins/jquery/turbotabs/index.html">Demo</a>
+Homepage: http://themeflection.com/plug/turbotabs-responsive-tabs-jquery-plugin/ <br/>
+For live preview check <a href="http://themeflection.com/plugins/jquery/turbotabs/index.html">Demo</a><br/>
 
 You can also use my online options builder (available in the Demo) that will make it easier for you to implement the plugin options. Play with live previewer and when you are ready click on button "get options".
 
