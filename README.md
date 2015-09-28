@@ -52,11 +52,18 @@ Licenced under MIT licence
 <h4>Changelog</h4>
 <table>
 <tr>
-<td>Version 1.0 </td>
-<td> Initial release </td>
+<td>Version 1.2 </td>
+<td> -Fixed trasnformation issues (tabs dissapearing when shifted to accordion)<br/>
+-Fixed Smooth animation issue in accordion mode<br/>
+-Added random animation mode - Special Thanks go to miltosc (https://github.com/miltosc) who contributed with this functionality
+</td>
 </tr>
 <tr>
 <td>Version 1.1  </td>
 <td>Added 28 animations,  added tt_prefixes to fix compatibility issues with other CSS frameworks such as foundation and bootstrap.</td>
+</tr>
+<tr>
+<td>Version 1.0 </td>
+<td> Initial release </td>
 </tr>
 </table>                          
