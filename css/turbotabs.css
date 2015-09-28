@@ -153,6 +153,9 @@ div.tt_container:after{
 .responsive .tt_tab{
   position: relative;
   visibility: visible;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
 }
 /* Classic Layout */
   .classic .tt_container {

@@ -2,8 +2,8 @@
   * TurboTabs jQuery Plugin
   * Author: Aleksej Vukomanovic
   * Website: http://themeflection.com
-  * Version: 1.1
-  * Version from: 25.03.2015
+  * Version: 1.2
+  * Version from: 28.09.2015
   * Licence: MIT 
   */
 ;(function ( $ ) {
@@ -65,126 +65,129 @@
          /*==============================================
                             ANIMATIONS
         ================================================*/
-        if( 'Scale' === animation ){
-            animationIn = 'zoomIn';
-            animationOut = 'zoomOut';
-        }
-        else if( 'FadeUp' === animation ){
-            animationIn = 'fadeInUp';
-            animationOut = 'fadeOutDown';
-        }
-        else if( 'FadeDown' === animation ){
-            animationIn = 'fadeInDown';
-            animationOut = 'fadeOutUp';
-        }
-        else if( 'FadeLeft' === animation ){
-            animationIn = 'fadeInLeft';
-            animationOut = 'fadeOutLeft';
-        }
-        else if( 'FadeRight' === animation ){
-            animationIn = 'fadeInRight';
-            animationOut = 'fadeOutRight';
-        }
-         else if( 'SlideUp' === animation ){
-            animationIn = 'SlideInUp';
-            animationOut = 'SlideOutUp';
-            timer = 80;
-        }
-        else if( 'SlideDown' === animation ){
-            animationIn = 'SlideInDown';
-            animationOut = 'SlideOutDown';
-            timer = 80;
-        }
-        else if( 'SlideLeft' === animation ){
-            animationIn = 'SlideInLeft';
-            animationOut = 'SlideOutLeft';
-            timer = 80;
-        }
-        else if( 'SlideRight' === animation ){
-            animationIn = 'SlideInRight';
-            animationOut = 'SlideOutRight';
-            timer = 80;
-        }
-        else if( 'ScrollDown' === animation ){
-            animationIn = 'fadeInUp';
-            animationOut = 'fadeOutUp';
-        }
-        else if( 'ScrollUp' === animation ){
-            animationIn = 'fadeInDown';
-            animationOut = 'fadeOutDown';
-        }
-        else if( 'ScrollRight' === animation ){
-            animationIn = 'fadeInLeft';
-            animationOut = 'fadeOutRight';
-        }
-        else if( 'ScrollLeft' === animation ){
-            animationIn = 'fadeInRight';
-            animationOut = 'fadeOutLeft';
-        }
-        else if( 'Bounce' === animation ){
-            animationIn = 'bounceIn';
-            animationOut = 'bounceOut';
-        }
-        else if( 'BounceLeft' === animation ){
-            animationIn = 'bounceInLeft';
-            animationOut = 'bounceOutLeft';
-        }
-        else if( 'BounceRight' === animation ){
-            animationIn = 'bounceInRight';
-            animationOut = 'bounceOutRight';
-        }
-        else if( 'BounceDown' === animation ){
-            animationIn = 'bounceInDown';
-            animationOut = 'bounceOutDown';
-        }
-        else if( 'BounceUp' === animation ){
-            animationIn = 'bounceInUp';
-            animationOut = 'bounceOutUp';
-        } 
-         else if( 'HorizontalFlip' === animation ){
-            animationIn = 'flipInX';
-            animationOut = 'flipOutX';
-        }
-        else if( 'VerticalFlip' === animation ){
-            animationIn = 'flipInY';
-            animationOut = 'flipOutY';
-        }
-         else if( 'RotateDownLeft' === animation ){
-            animationIn = 'rotateInDownLeft';
-            animationOut = 'rotateOutDownLeft';
-        }
-        else if( 'RotateDownRight' === animation ){
-            animationIn = 'rotateInDownRight';
-            animationOut = 'rotateOutDownRight';
-        } 
-        else if( 'RotateUpLeft' === animation ){
-            animationIn = 'rotateInUpLeft';
-            animationOut = 'rotateOutUpLeft';
-        }
-        else if( 'RotateUpRight' === animation ){
-            animationIn = 'rotateInUpRight';
-            animationOut = 'rotateOutUpRight';
-        } 
-        else if( 'TopZoom' === animation ){
-            animationIn = 'zoomInUp';
-            animationOut = 'zoomOutUp';
-        }
-        else if( 'BottomZoom' === animation ){
-            animationIn = 'zoomInDown';
-            animationOut = 'zoomOutDown';
-        }
-        else if( 'LeftZoom' === animation ){
-            animationIn = 'zoomInLeft';
-            animationOut = 'zoomOutLeft';
-        }
-        else if( 'RightZoom' === animation ){
-            animationIn = 'zoomInRight';
-            animationOut = 'zoomOutRight';
+        function return_animation(animation){
+            if( 'Scale' === animation ){
+                animationIn = 'zoomIn';
+                animationOut = 'zoomOut';
+            }
+            else if( 'FadeUp' === animation ){
+                animationIn = 'fadeInUp';
+                animationOut = 'fadeOutDown';
+            }
+            else if( 'FadeDown' === animation ){
+                animationIn = 'fadeInDown';
+                animationOut = 'fadeOutUp';
+            }
+            else if( 'FadeLeft' === animation ){
+                animationIn = 'fadeInLeft';
+                animationOut = 'fadeOutLeft';
+            }
+            else if( 'FadeRight' === animation ){
+                animationIn = 'fadeInRight';
+                animationOut = 'fadeOutRight';
+            }
+             else if( 'SlideUp' === animation ){
+                animationIn = 'SlideInUp';
+                animationOut = 'SlideOutUp';
+                timer = 80;
+            }
+            else if( 'SlideDown' === animation ){
+                animationIn = 'SlideInDown';
+                animationOut = 'SlideOutDown';
+                timer = 80;
+            }
+            else if( 'SlideLeft' === animation ){
+                animationIn = 'SlideInLeft';
+                animationOut = 'SlideOutLeft';
+                timer = 80;
+            }
+            else if( 'SlideRight' === animation ){
+                animationIn = 'SlideInRight';
+                animationOut = 'SlideOutRight';
+                timer = 80;
+            }
+            else if( 'ScrollDown' === animation ){
+                animationIn = 'fadeInUp';
+                animationOut = 'fadeOutUp';
+            }
+            else if( 'ScrollUp' === animation ){
+                animationIn = 'fadeInDown';
+                animationOut = 'fadeOutDown';
+            }
+            else if( 'ScrollRight' === animation ){
+                animationIn = 'fadeInLeft';
+                animationOut = 'fadeOutRight';
+            }
+            else if( 'ScrollLeft' === animation ){
+                animationIn = 'fadeInRight';
+                animationOut = 'fadeOutLeft';
+            }
+            else if( 'Bounce' === animation ){
+                animationIn = 'bounceIn';
+                animationOut = 'bounceOut';
+            }
+            else if( 'BounceLeft' === animation ){
+                animationIn = 'bounceInLeft';
+                animationOut = 'bounceOutLeft';
+            }
+            else if( 'BounceRight' === animation ){
+                animationIn = 'bounceInRight';
+                animationOut = 'bounceOutRight';
+            }
+            else if( 'BounceDown' === animation ){
+                animationIn = 'bounceInDown';
+                animationOut = 'bounceOutDown';
+            }
+            else if( 'BounceUp' === animation ){
+                animationIn = 'bounceInUp';
+                animationOut = 'bounceOutUp';
+            } 
+             else if( 'HorizontalFlip' === animation ){
+                animationIn = 'flipInX';
+                animationOut = 'flipOutX';
+            }
+            else if( 'VerticalFlip' === animation ){
+                animationIn = 'flipInY';
+                animationOut = 'flipOutY';
+            }
+             else if( 'RotateDownLeft' === animation ){
+                animationIn = 'rotateInDownLeft';
+                animationOut = 'rotateOutDownLeft';
+            }
+            else if( 'RotateDownRight' === animation ){
+                animationIn = 'rotateInDownRight';
+                animationOut = 'rotateOutDownRight';
+            } 
+            else if( 'RotateUpLeft' === animation ){
+                animationIn = 'rotateInUpLeft';
+                animationOut = 'rotateOutUpLeft';
+            }
+            else if( 'RotateUpRight' === animation ){
+                animationIn = 'rotateInUpRight';
+                animationOut = 'rotateOutUpRight';
+            } 
+            else if( 'TopZoom' === animation ){
+                animationIn = 'zoomInUp';
+                animationOut = 'zoomOutUp';
+            }
+            else if( 'BottomZoom' === animation ){
+                animationIn = 'zoomInDown';
+                animationOut = 'zoomOutDown';
+            }
+            else if( 'LeftZoom' === animation ){
+                animationIn = 'zoomInLeft';
+                animationOut = 'zoomOutLeft';
+            }
+            else if( 'RightZoom' === animation ){
+                animationIn = 'zoomInRight';
+                animationOut = 'zoomOutRight';
+            }
         }
 
         /*==============================================
                        Initialize Tabs
         ===============================================*/
+        return_animation(animation);
         tabs.find('li').on('click', function(){
             if( true === tabsResponsive ){
                  if( !$(this).hasClass("active") ) {
@@ -194,6 +197,12 @@
                  }// else
             } else {
                 if( !$(this).hasClass("active") ) {
+
+                    if( 'Random' === animation ){               
+                        var animations_array = Array("Scale","Bounce","FadeUp","FadeDown","FadeLeft","FadeRight","SlideUp","SlideDown","SlideLeft","SlideRight","ScrollUp","ScrollDown","ScrollLeft","ScrollRight","BounceUp","BounceDown","BounceLeft","BounceRight","HorizontalFlip","VerticalFlip","RotateDownLeft","RotateDownRight","RotateUpLeft","RotateUpRight","TopZoom","BottomZoom","LeftZoom","RightZoom");
+                        var rand_animation = animations_array[Math.floor(Math.random()*animations_array.length)];
+                        return_animation(rand_animation);
+                    }
                     var index = $(this).index();
                     var current = $(this);
                     $(this).parent().find("li.active").removeClass("active");
@@ -238,6 +247,7 @@
                         
                         if( true === tabsResponsive && currWidth > primWidth['container'] ||  tabs.width() > primWidth['container'] ){
                            resize(); 
+                           $("div.tt_tab").removeClass('animated');
                         } else if( false === tabsResponsive && tabW < ( tabsWidth + 10 ) ){
                            reset(); 
                         } else if( primWidth['resized'] != 0 ){
@@ -250,6 +260,7 @@
                        if( windowWidth < 480 ) {
                            if(  true === tabsResponsive && currWidth > primWidth['container']  * 1.5 ) { 
                                 resize(); 
+                                $("div.tt_tab").removeClass('animated');
                                 setTimeout(function(){
                                 calcHeight();    
                                 if( 1 === once ){
@@ -277,6 +288,7 @@
                  if( windowWidth < 760 ){ // if starting from small screen transform it to accordion now
                        reset();
                        mobile = true;
+                       $("div.tt_tab").removeClass('animated');
                 }
 
                 $(window).resize(function(){
@@ -368,6 +380,7 @@
                 resized++;
             }
             sel.find('.tt_tabs .tt_tab').not('.active').slideUp();
+            $("div.tt_tab").removeClass('animated');
         }// reset
 
         function resize(){ // reset accordion to tab again
