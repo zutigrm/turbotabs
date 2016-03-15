@@ -373,7 +373,7 @@
             var index = -1;
             var zbir = tab.length;
             for( var i = 0; i < zbir; i++ ){
-                (tab.eq(i)).appendTo(tabs.find('li').eq(i));
+                (tab.eq(i)).appendTo(tabs.find('> li').eq(i));
             }
             if( resized === 0 ){
                 sel.closest('html').find('head style[data-style="turbotab"]').append(' .'+random+' .tt_tabs h3{background: ' + settings.navBackground + ';} .'+ random +'.responsive .tt_tabs li, .'+ random +'.responsive .tt_tabs li.active, .'+ random +'.responsive .tt_tabs li:hover{background: '+ settings.backgroundColor +';}');
