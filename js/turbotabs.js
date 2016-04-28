@@ -23,7 +23,8 @@
             headingTextColor : '#fff',
             navTextShadow : 'on',
             navTextShadowColor : 'dark',
-            navAlign : 'left'
+            navAlign : 'left',
+            cb_after_animation: function(){},
         },options);
         if( settings.deinitialize === 'true' ){
             return
@@ -209,7 +210,8 @@
                     $(this).addClass("active");
                     $(this).closest(sel).find("div.tt_tab.active").attr('class', 'tt_tab animated ' + animationOut); 
                      setTimeout(function(){
-                        current.closest(sel).find("div.tt_tab").eq(index).attr('class', 'tt_tab active animated '+ animationIn);; 
+                        current.closest(sel).find("div.tt_tab").eq(index).attr('class', 'tt_tab active animated '+ animationIn);
+                        settings.cb_after_animation();
                     },timer);
                 }// if
             }// else
