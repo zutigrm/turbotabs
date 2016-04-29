@@ -192,7 +192,7 @@
         tabs.find('li').on('click', function(){
             if( true === tabsResponsive ){
                  if( !$(this).hasClass("active") ) {
-                    $(this).addClass('active').find('.tt_tab').slideDown().parent().siblings().removeClass('active').find('.tt_tab').slideUp();
+                    $(this).addClass('active').find('.tt_tab').slideDown().parent().siblings().removeClass('active').find('.tt_tab').slideUp(400, settings.cb_after_animation);
                  } else{
                      $(this).removeClass('active').find('.tt_tab').slideUp();
                  }// else
